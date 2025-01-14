@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title -%}
+    {% if title %}
+        <title>{{title}}</title>
+    {% else %}
+        <title>EduCat</title>
+    {% endif %}
+    {% endblock %}
+    {% block style -%}
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"/>
+    {% endblock %}
+</head>
+<body>
+    {% block content -%}
+        {% block page_title %}
+        <div class="title">
+            {{ title }}
+        </div>
+        {% endblock %}
+    {% endblock -%}
+
+
+</body>
+</html>

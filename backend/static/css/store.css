@@ -1,0 +1,39 @@
+@import url('style.css');
+
+body {
+    background-image: url("../pictures/bg-start.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title_product {
+    color: black;
+    text-align: center;
+    display: inline;
+    margin-left: 25%;
+}
+
+.in_cart {
+    display: inline;
+}
+
+.price {
+    display: inline;
+    margin-left: 25%;
+}
+
+.value {
+    display: inline;
+}
+
+.description {
+    text-align: center;
+    margin-left: 6%;
+}

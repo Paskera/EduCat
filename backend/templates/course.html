@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ super() }}
+
+{% for row in cursor %}
+    {% for key, value in row.items() %}
+        <li>{{key}}, {{value}} </li>
+    {% endfor %}
+{% endfor %}
+
+{% endblock %}
